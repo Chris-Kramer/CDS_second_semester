@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<script src="lib/jquery-1.12.4/jquery.min.js"></script>
+<link href="lib/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="lib/leaflet-1.3.1/leaflet.js"></script>
+<link href="lib/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="lib/proj4-2.6.2/proj4.min.js"></script>
+<script src="lib/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="lib/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="lib/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="lib/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="lib/leaflet-providers-plugin-2.0.4.1/leaflet-providers-plugin.js"></script>
+<link href="lib/leaflet-minimap-3.3.1/Control.MiniMap.min.css" rel="stylesheet" />
+<script src="lib/leaflet-minimap-3.3.1/Control.MiniMap.min.js"></script>
+<script src="lib/leaflet-minimap-3.3.1/Minimap-binding.js"></script>
+<link href="lib/leaflet-measure-2.1.7/leaflet-measure.css" rel="stylesheet" />
+<script src="lib/leaflet-measure-2.1.7/leaflet-measure.min.js"></script>
+
+</head>
+<body>
+<div id="htmlwidget_container">
+  <div id="htmlwidget-b8211af9f1baed2abc32" style="width:100%;height:400px;" class="leaflet html-widget"></div>
+</div>
+<script type="application/json" data-for="htmlwidget-b8211af9f1baed2abc32">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[8.79827003497764,55.9746719064715],10,[]],"calls":[{"method":"addProviderTiles","args":["Esri",null,"Esri",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldStreetMap",null,"Esri.WorldStreetMap",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.DeLorme",null,"Esri.DeLorme",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldTopoMap",null,"Esri.WorldTopoMap",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldTerrain",null,"Esri.WorldTerrain",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldShadedRelief",null,"Esri.WorldShadedRelief",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldPhysical",null,"Esri.WorldPhysical",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.OceanBasemap",null,"Esri.OceanBasemap",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.NatGeoWorldMap",null,"Esri.NatGeoWorldMap",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldGrayCanvas",null,"Esri.WorldGrayCanvas",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addLayersControl","args":[["Esri","Esri.WorldStreetMap","Esri.DeLorme","Esri.WorldTopoMap","Esri.WorldImagery","Esri.WorldTerrain","Esri.WorldShadedRelief","Esri.WorldPhysical","Esri.OceanBasemap","Esri.NatGeoWorldMap","Esri.WorldGrayCanvas"],[],{"collapsed":false,"autoZIndex":true,"position":"topright"}]},{"method":"addMiniMap","args":[null,"Esri","bottomright",150,150,19,19,-5,false,false,false,true,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addMeasure","args":[{"position":"bottomleft","primaryLengthUnit":"meters","primaryAreaUnit":"sqmeters","activeColor":"#3D535D","completedColor":"#7D4479","popupOptions":{"className":"leaflet-measure-resultpopup","autoPanPadding":[10,10]},"captureZIndex":10000,"localization":"en","decPoint":".","thousandsSep":","}]},{"method":"addControl","args":["","topright",null,"info legend"]}]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n                        function(el, x) {\n                        var myMap = this;\n                        myMap.on('baselayerchange',\n                        function (e) {\n                        myMap.minimap.changeLayer(L.tileLayer.provider(e.name));\n                        })\n                       }).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-b8211af9f1baed2abc32">{"viewer":{"width":"100%","height":400,"padding":0,"fill":true},"browser":{"width":"100%","height":400,"padding":0,"fill":true}}</script>
+</body>
+</html>
