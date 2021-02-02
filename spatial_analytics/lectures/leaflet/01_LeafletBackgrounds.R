@@ -16,7 +16,7 @@ library(htmlwidgets)
 library(tidyverse)
 
 popup = c("Robin", "Jakub", "Jannes")
-
+leaflet.providers::get_providers()
 leaflet() %>% # Call biblioteket glem ikke paranteser
 # addProviderTiles("Esri.WorldPhysical") %>% #En baggrund
   addProviderTiles("Esri.WorldImagery") %>% #En anden baggrund
